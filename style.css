@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "Noi-Regular";
+  src: url("/fonts/NoiGroteskTrial-Regular.ttf");
+}
+@font-face {
+  font-family: "Noi-Medium";
+  src: url("/fonts/NoiGroteskTrial-Medium.ttf");
+}
+@font-face {
+  font-family: "Noi-Bold";
+  src: url("/fonts/NoiGroteskTrial-Bold.ttf");
+}
+:root {
+  --white-color-font: #f5f4f6;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: rgb(183, 150, 253);
+  background: linear-gradient(
+    0deg,
+    rgba(183, 150, 253, 1) 0%,
+    rgba(80, 28, 172, 1) 50%,
+    rgba(9, 0, 47, 1) 100%
+  );
+  scroll-behavior: smooth;
+  font-family: "Noi-Regular", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+  flex: 1 1 0%;
+
+  overflow-x: hidden;
+  color: var(--white-color-font);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 20px;
+  margin: 0px;
+  max-width: 100%;
+  padding: 0px;
+}
+::-moz-selection {
+  background-color: #331547;
+}
+::selection {
+  background-color: #331547;
+}
+/* ----------------------------Navbar Section---------------------------- */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2vh 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+}
+.navbar-brand {
+  font-size: 2rem;
+  font-family: "Noi-Bold";
+}
+.navbar a,
+.navbar button {
+  text-decoration: none;
+  color: var(--white-color-font);
+}
+.navbar .navbar-toggler-icon {
+  background-image: url(./imgs/pyramid.png);
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 5%;
+  background: linear-gradient(to top, #361e5c, transparent);
+  z-index: 1000;
+}
+section img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+#Mens {
+  top: 100px;
+}
+
+#Moon {
+  mix-blend-mode: screen;
+}
+
+/* ----------------------------Jumbotron Section---------------------------- */
+.jumbotron {
+  position: absolute;
+  text-align: center;
+  top: 350px;
+}
+.jumbotron h1 {
+  font-size: 2.5rem;
+}
+.jumbotron p {
+  font-size: 1.2rem;
+}
+/* ----------------------------Ferramentas Section---------------------------- */
+.squares {
+  background-color: #331547;
+  border-radius: 25px;
+  margin-right: 0.8vw;
+  width: 150px;
+  padding: 20px;
+}
+.squares img {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 35px;
+}
+.squares .brand-title {
+  padding-bottom: 10px;
+}
+.ferramentas {
+  /* position: absolute; */
+  text-align: center;
+  /* top: 900px; */
+  z-index: 1000;
+}
+.section {
+  /* position: relative; */
+  /* padding-top: 200px; */
+  background: #361e5c;
+}
+/* ----------------------------Sobre Mim Section---------------------------- */
+.sobre-mim {
+  padding: 5vh 4vw;
+}
+.sobre-mim h2 {
+  margin-bottom: 4vh;
+  font-family: "Noi-Bold";
+}
+.sobre-mim img {
+  width: 80px;
+}
+.sobre-mim-text {
+  border-radius: 30px;
+  background-color: #f5f4f6;
+  color: #4e2977;
+  padding: 3vh 3vw;
+}
+.container-buttons {
+  text-align: center;
+  font-family: "Noi-Medium";
+}
+.btnCV {
+  color: var(--white-color-font);
+  background-color: #4E2977;
+}
+.btnLinkedin a{
+  text-decoration: none;
+  color: #4E2977;
+}
+.btnLinkedin img{
+  width: 16px;
+}
+/* ----------------------------Progress Bar---------------------------- */
+.progress {
+  height: 10px;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #ee303c;
+  border-radius: 6px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-striped .progress-bar {
+  background-color: #7b2cbf;
+  width: 30%;
+  background-image: linear-gradient(
+    45deg,
+    rgb(90, 24, 154) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgb(90, 24, 154) 50%,
+    rgb(90, 24, 154) 75%,
+    transparent 75%,
+    transparent
+  );
+  animation: progressAnimationStrike 6s;
+}
+
+@keyframes progressAnimationStrike {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
