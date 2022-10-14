@@ -42,6 +42,9 @@
         <li class="nav-item me-4">
           <a class="nav-link" href="#projetos">Projetos</a>
         </li>
+        <li class="nav-item me-4">
+          <a class="nav-link" href="#trajetoria">Trajetoria</a>
+        </li>
         <li class="nav-item">
           <a href="#contato"
             ><button class="btn btn-outline-light rounded-pill nav-link">
@@ -169,6 +172,9 @@
       </div>
     </div>
   </div>
+
+  <div class="container"></div>
+
   <div class="container-fluid container-projetos" id="projetos">
     <h2>Projetos</h2>
     <div class="row row-cols-2">
@@ -177,6 +183,10 @@
         <div class="conteudo-projeto">
           <p>Hangman Game</p>
           <p>Remodelagem do game Hangman utilizando JS, CSS e HTML.</p>
+        </div>
+        <div class="projetos-icons">
+          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-link"></i></a>
         </div>
       </div>
       <div class="col squares projetos">
@@ -188,11 +198,15 @@
             das cidades do Brasil.
           </p>
         </div>
+        <div class="projetos-icons">
+          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-link"></i></a>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="container bootstrap snippets bootdeys">
+  <div class="container bootstrap snippets bootdeys" id="trajetoria">
     <h2>Trajetoria</h2>
     <div class="col-md-12">
       <div class="timeline-centered timeline-sm">
@@ -202,8 +216,7 @@
               ><span>Outubro</span><span class="text-muted">2022</span></time
             >
             <div class="timeline-icon coursera">
-              <img width="45" src="./imgs/coursera-logo-400x57.png" alt="">
-
+              <img width="45" src="./imgs/coursera-logo-400x57.png" alt="" />
             </div>
             <div class="timeline-label coursera">
               <h5 class="timeline-title">Google UX Design</h5>
@@ -216,8 +229,7 @@
               ><span>Setembro</span><span class="text-muted">2022</span></time
             >
             <div class="timeline-icon udemy">
-              <img width="45" src="./imgs/udemy-256.png" alt="">
-
+              <img width="45" src="./imgs/udemy-256.png" alt="" />
             </div>
             <div class="timeline-label udemy">
               <h5 class="timeline-title">
@@ -232,19 +244,13 @@
               ><span>Agosto</span><span class="text-muted">2022</span></time
             >
             <div class="timeline-icon simplilearn">
-              <img width="45" src="./imgs/Simplilearn.png" alt="">
+              <img width="45" src="./imgs/Simplilearn.png" alt="" />
             </div>
             <div class="timeline-label simplilearn">
               <h5 class="timeline-title">Git Training</h5>
             </div>
           </div>
-          <div class="timeline-entry-inner">
-            <!-- <div
-              class="timeline-icon"
-            >
-            <img src="./imgs/rocket.png" width="50" height="50" alt="">
-            </div> -->
-          </div>
+          <div class="timeline-entry-inner"></div>
         </article>
         <article class="timeline-entry left-aligned">
           <div class="timeline-entry-inner">
@@ -252,7 +258,7 @@
               ><span>Junho</span><span class="text-muted">2022</span></time
             >
             <div class="timeline-icon bradesco">
-              <img width="30" src="./imgs/Bradesco.png" alt="">
+              <img width="30" src="./imgs/Bradesco.png" alt="" />
             </div>
             <div class="timeline-label bradesco">
               <h5 class="timeline-title">
@@ -265,6 +271,85 @@
     </div>
   </div>
 
+  <div class="container-contact100" id="contato" style="user-select: auto">
+    <div></div>
+    <div class="wrap-contact100" style="user-select: auto">
+      <form class="contact100-form validate-form" style="user-select: auto">
+        <span class="contact100-form-title" style="user-select: auto">
+          Diga um Oi <img src="" alt="" />
+          <img
+            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/waving-hand_1f44b.png"
+            srcset="
+              https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/waving-hand_1f44b.png 2x
+            "
+            alt="Waving Hand on Apple iOS 15.4"
+            width="40"
+            height="40"
+            style="user-select: auto"
+          />
+        </span>
+        <div
+          class="wrap-input100 validate-input"
+          data-validate="Name is required"
+          style="user-select: auto"
+        >
+          <span class="label-input100" style="user-select: auto">Seu Nome</span>
+          <input
+            class="input100"
+            type="text"
+            name="name"
+            placeholder="Insira seu nome"
+            style="user-select: auto"
+          />
+          <span class="focus-input100" style="user-select: auto"></span>
+        </div>
+        <div
+          class="wrap-input100 validate-input"
+          data-validate="Valid email is required: ex@abc.xyz"
+          style="user-select: auto"
+        >
+          <span class="label-input100" style="user-select: auto">Email</span>
+          <input
+            class="input100"
+            type="text"
+            name="email"
+            placeholder="Insira seu endereço de email"
+            style="user-select: auto"
+          />
+          <span class="focus-input100" style="user-select: auto"></span>
+        </div>
+        <div
+          class="wrap-input100 validate-input"
+          data-validate="Message is required"
+          style="user-select: auto"
+        >
+          <span class="label-input100" style="user-select: auto">Mensagem</span>
+          <textarea
+            class="input100"
+            name="message"
+            placeholder="Sua mensagem aqui..."
+            style="user-select: auto"
+          ></textarea>
+          <span class="focus-input100" style="user-select: auto"></span>
+        </div>
+        <div class="container-contact100-form-btn" style="user-select: auto">
+          <div class="wrap-contact100-form-btn" style="user-select: auto">
+            <div class="contact100-form-bgbtn" style="user-select: auto"></div>
+            <button class="contact100-form-btn" style="user-select: auto">
+              <span style="user-select: auto">
+                Enviar
+                <i
+                  class="fa fa-long-arrow-right m-l-7"
+                  aria-hidden="true"
+                  style="user-select: auto"
+                ></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <div class="container-fluid">
     <footer
