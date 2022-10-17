@@ -21,7 +21,7 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-md">
     <a class="navbar-brand nav-link" href="#">edu.</a>
     <button
       class="navbar-toggler"
@@ -78,6 +78,51 @@
         class="row row-cols-lg-7 row-cols-sm-5 row-cols-3 gy-2 justify-content-center"
       >
         <div class="col squares">
+          <img src="./imgs/FIGMA.svg" alt="" />
+          <div class="brand-title">Figma</div>
+          <div class="container-bar">
+            <div class="progress progress-striped">
+              <div class="progress-bar figma"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col squares">
+          <img src="./imgs/BOOTSTRAP.svg" alt="" />
+          <div class="brand-title">Bootstrap</div>
+          <div class="container-bar">
+            <div class="progress progress-striped">
+              <div class="progress-bar bootstrap"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col squares">
+          <img src="./imgs/HTML.svg" alt="" />
+          <div class="brand-title">HTML</div>
+          <div class="container-bar">
+            <div class="progress progress-striped">
+              <div class="progress-bar html"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col squares">
+          <img src="./imgs/CSS.svg" alt="" />
+          <div class="brand-title">CSS</div>
+          <div class="container-bar">
+            <div class="progress progress-striped">
+              <div class="progress-bar css"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col squares">
+          <img src="./imgs/JS.svg" alt="" />
+          <div class="brand-title">Javascript</div>
+          <div class="container-bar">
+            <div class="progress progress-striped">
+              <div class="progress-bar js"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col squares">
           <img src="./imgs/GIT.svg" alt="" />
           <div class="brand-title">Git</div>
           <div class="container-bar">
@@ -95,60 +140,38 @@
             </div>
           </div>
         </div>
-        <div class="col squares">
-          <img src="./imgs/BOOTSTRAP.svg" alt="" />
-          <div class="brand-title">Bootstrap</div>
-          <div class="container-bar">
-            <div class="progress progress-striped">
-              <div class="progress-bar bootstrap"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col squares">
-          <img src="./imgs/CSS.svg" alt="" />
-          <div class="brand-title">CSS</div>
-          <div class="container-bar">
-            <div class="progress progress-striped">
-              <div class="progress-bar css"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col squares">
-          <img src="./imgs/HTML.svg" alt="" />
-          <div class="brand-title">HTML</div>
-          <div class="container-bar">
-            <div class="progress progress-striped">
-              <div class="progress-bar html"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col squares">
-          <img src="./imgs/JS.svg" alt="" />
-          <div class="brand-title">Javascript</div>
-          <div class="container-bar">
-            <div class="progress progress-striped">
-              <div class="progress-bar js"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col squares">
-          <img src="./imgs/FIGMA.svg" alt="" />
-          <div class="brand-title">Figma</div>
-          <div class="container-bar">
-            <div class="progress progress-striped">
-              <div class="progress-bar figma"></div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <div class="container container-3" id="sec-sobre-mim">
       <h3>Sobre mim</h3>
       <div class="row sobre-mim-row">
-        <div class="col-lg-1 col-md-1 col-12 me-4 img">
-          <img src="./imgs/foto.jpg" alt="" />
+        <div class="col col-lg-3 col-md-3 col-12">
+          <div class="card profile-card-3">
+            <div class="background-block">
+              <img
+                src="https://images.pexels.com/photos/7130475/pexels-photo-7130475.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="profile-sample1"
+                class="background"
+              />
+            </div>
+            <div class="profile-thumb-block">
+              <img src="./imgs/foto.jpg" alt="profile-image" class="profile" />
+            </div>
+            <div class="card-content">
+              <h2>Eduardo Cardoso</h2>
+              <div class="icon-block">
+                <p>21 anos</p>
+                <p><i class="fa-solid fa-location-dot"></i> Brasília-DF</p>
+                <p><i class="fa-solid fa-graduation-cap"></i> Engenharia de Software <small>(cursando)</small></p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col container-3-content">
+        <!-- <div class="col-lg-1 col-md-1 col-12 me-4 img">
+          <img src="./imgs/foto.jpg" alt="" />
+          
+        </div> -->
+        <div class="col container-3-content squares">
           <div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nemo
@@ -282,8 +305,16 @@
     </div>
   </div>
 
-  <div class="container-contact100 container-6" id="sec-contato" style="user-select: auto">
-    <div></div>
+  <!-- <div class="container">
+    <h3>Contato</h3>
+  </div> -->
+  <div
+    class="container container-contact100 container-6"
+    id="sec-contato"
+    style="user-select: auto"
+  >
+    <h3>Contato</h3>
+
     <div class="wrap-contact100" style="user-select: auto">
       <form class="contact100-form validate-form" style="user-select: auto">
         <div class="contact100-form-title" style="user-select: auto">
@@ -348,9 +379,7 @@
           <div class="wrap-contact100-form-btn" style="user-select: auto">
             <div class="contact100-form-bgbtn" style="user-select: auto"></div>
             <button class="contact100-form-btn" style="user-select: auto">
-              <span style="user-select: auto">
-                Enviar
-              </span>
+              <span style="user-select: auto"> Enviar </span>
             </button>
           </div>
         </div>
@@ -369,7 +398,11 @@
       <div class="justify-content-end">
         <div class="d-flex list-unstyled">
           <li class="me-4">
-            <a href="https://www.instagram.com/educrds_/" target="_blank" class="footer-icons">
+            <a
+              href="https://www.instagram.com/educrds_/"
+              target="_blank"
+              class="footer-icons"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -388,7 +421,8 @@
             <a
               href="https://www.linkedin.com/in/eduardo-cardoso-50b5141ba/"
               target="_blank"
-              rel="noopener noreferrer" class="footer-icons"
+              rel="noopener noreferrer"
+              class="footer-icons"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -408,7 +442,8 @@
             <a
               href="https://github.com/educrds/"
               target="_blank"
-              rel="noopener noreferrer" class="footer-icons"
+              rel="noopener noreferrer"
+              class="footer-icons"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
