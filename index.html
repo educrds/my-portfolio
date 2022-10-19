@@ -38,7 +38,7 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="fa-solid fa-ellipsis-vertical menu-icon"></span>
     </button>
     <div
       class="collapse navbar-collapse justify-content-end"
@@ -67,10 +67,12 @@
     <img src="./imgs/MOON.png" id="Moon" alt="lua de fundo" />
     <img src="./imgs/MENS.png" id="Mens" alt="homens no deserto de fundo" />
   </section>
-  <div class="container container-1" id="container-01">
+  <div class="container container-1 text-center">
     <h1>Olá, sou Eduardo!</h1>
     <p>
-      Desenvolvedor Full-Stack em ascensão, buscando descobrir o mundo da programação e as melhores práticas de codificação almejando aplicações visualmente agradavéis e bem escritas. 
+      Desenvolvedor Full-Stack em ascensão, buscando descobrir o mundo da
+      programação e as melhores práticas de codificação almejando aplicações
+      visualmente agradavéis e bem escritas.
     </p>
   </div>
   <div class="section">
@@ -78,7 +80,7 @@
       <div
         class="row row-cols-lg-7 row-cols-sm-5 row-cols-3 gy-2 justify-content-center"
       >
-        <div class="col squares">
+        <div class="col squares text-center">
           <img src="./imgs/FIGMA.svg" alt="logo figma" />
           <p>Figma</p>
           <div class="container-bar">
@@ -87,7 +89,7 @@
             </div>
           </div>
         </div>
-        <div class="col squares">
+        <div class="col squares text-center">
           <img src="./imgs/BOOTSTRAP.svg" alt="logo bootstrap" />
           <p>Bootstrap</p>
           <div class="container-bar">
@@ -96,7 +98,7 @@
             </div>
           </div>
         </div>
-        <div class="col squares">
+        <div class="col squares text-center">
           <img src="./imgs/HTML.svg" alt="logo HTML" />
           <p>HTML</p>
           <div class="container-bar">
@@ -105,7 +107,7 @@
             </div>
           </div>
         </div>
-        <div class="col squares">
+        <div class="col squares text-center">
           <img src="./imgs/CSS.svg" alt="logo CSS" />
           <p>CSS</p>
           <div class="container-bar">
@@ -114,7 +116,7 @@
             </div>
           </div>
         </div>
-        <div class="col squares">
+        <div class="col squares text-center">
           <img src="./imgs/JS.svg" alt="logo Javascript" />
           <p>Javascript</p>
           <div class="container-bar">
@@ -123,7 +125,7 @@
             </div>
           </div>
         </div>
-        <div class="col squares">
+        <div class="col squares text-center">
           <img src="./imgs/GIT.svg" alt="logo Git" />
           <p>Git</p>
           <div class="container-bar">
@@ -132,7 +134,7 @@
             </div>
           </div>
         </div>
-        <div class="col squares">
+        <div class="col squares text-center">
           <img src="./imgs/GITHUB.svg" alt="logo Github" />
           <p>Github</p>
           <div class="container-bar">
@@ -146,15 +148,9 @@
     <div class="container container-3" id="sec-sobre-mim">
       <h3>Sobre mim</h3>
       <div class="row sobre-mim-row">
-        <div class="col col-lg-3 col-md-3 col-12">
-          <div class="card profile-card-3">
-            <div class="background-block">
-              <img
-                src="https://images.pexels.com/photos/7130475/pexels-photo-7130475.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="profile-sample1"
-                class="background"
-              />
-            </div>
+        <div class="col col-lg-3 col-md-3 col-12 sobre-mim-card">
+          <div class="card profile-card-3 text-center">
+            <div class="background-block"></div>
             <div class="profile-thumb-block">
               <img src="./imgs/foto.jpg" alt="profile-image" class="profile" />
             </div>
@@ -171,34 +167,51 @@
             </div>
           </div>
         </div>
-        <div class="col container-3-content squares">
+        <div class="col container-3-content squares text-center">
           <p>
             Meu primeiro contato com a programação foi quando comecei a utilizar
-            o excel onde eu trabalhava, e descobri que havia uma linguagem de
-            programação por trás dele que permitia programar tarefas
-            repetitivas, <strong>VBA</strong>, foi então que comecei a
-            implementar scripts nas tarefas do dia a dia, quase sempre
-            repetitivas, em conjunto com o <strong>SAP ERP</strong>, que
-            permitia interaçao com o VBA. A partir desse momento descobri que o
-            mundo da programação pode mudar a forma como trabalhamos, otimizando
-            nosso tempo para que possamos focar no que realmente importa para
-            nós e para a empresa. Com esse conhecimento fui capaz de auxiliar
-            meus colegas de trabalho e consequentemente me destaquei na empresa
-            por ser um dos poucos que tinha esse conhecimento. A partir daí
-            procurei um curso para me inserir nesse mundo e aprender um pouco
-            mais e então descobri a <strong>Engenharia de Software</strong> e
-            venho na busca contínua de aprender cada dia mais...
+            o excel, e descobri que, por trás dele, havia uma linguagem de
+            programação, <strong>VBA</strong>, foi então que comecei a estudar e
+            implementar scripts nas tarefas do dia, quase sempre repetitivas, em
+            conjunto com o <strong>SAP ERP</strong>, que permitia interação com
+            o VBA. A partir desse momento descobri que o mundo da programação
+            pode mudar a forma como trabalhamos, otimizando nosso tempo para que
+            possamos focar no que realmente importa para nós e para a empresa.
+            Com esse conhecimento fui capaz de auxiliar meus colegas de trabalho
+            e consequentemente me destaquei na empresa por ser um dos poucos que
+            tinha esse conhecimento. A partir daí procurei um curso para me
+            inserir nesse mundo e aprender um pouco mais e então descobri a
+            <strong>Engenharia de Software</strong> e venho na busca contínua de
+            aprender cada dia mais...
           </p>
-          <div class="container container-3-buttons">
-            <button class="btn btnLinkedin">
-              <a
-                href="https://www.linkedin.com/in/eduardo-cardoso-50b5141ba/"
-                target="_blank"
+          <div class="container text-center mt-3">
+            <a
+              href="https://www.linkedin.com/in/eduardo-cardoso-50b5141ba/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                type="button"
+                class="btn btn-round btn-linkedin mr-md-3 mb-2 mb-md-0"
+                style="user-select: auto"
               >
-                <img src="./imgs/LINKEDIN.svg" alt="" /> Linkedin
-              </a>
-            </button>
-            <button class="btn rounded-pill btnCV">Baixar CV</button>
+                <i class="fa-brands fa-linkedin" style="user-select: auto"></i>
+              </button>
+            </a>
+            <a
+              href="./assets/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-CV"
+            >
+              <button
+                type="button"
+                class="btn btn-primary mr-md-3 mb-md-0 mb-2"
+                style="user-select: auto"
+              >
+                Baixar Currículo
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -213,7 +226,7 @@
       <div class="col squares container-4-squares">
         <img src="./imgs/rope.png" alt="" />
         <h4>Hangman Game</h4>
-        <p>Remodelagem do game Hangman utilizando JS, CSS e HTML.</p>
+        <p>Recriação do game Hangman utilizando Javascript, CSS e HTML.</p>
         <div class="container-4-icons">
           <a href="https://github.com/educrds/HangMan-Game" target="_blank"
             ><i class="fa fa-github"></i
@@ -243,7 +256,7 @@
   </div>
 
   <div class="container container-5" id="sec-trajetoria">
-    <h3>Trajetoria</h3>
+    <h3>Trajetória</h3>
     <div class="col-12">
       <div class="timeline-centered timeline-sm">
         <article class="timeline-entry">
@@ -419,7 +432,7 @@
       <div class="col-md-4 d-flex align-items-center" style="user-select: auto">
         <a class="navbar-brand" href="#">edu.</a>
       </div>
-      <ul class="d-flex list-unstyled footer-list-icons">
+      <ul class="d-flex list-unstyled footer-list-icons text-center">
         <a href="http://" target="_blank" rel="noopener noreferrer">
           <li class="me-4"><i class="fa-brands fa-instagram"></i></li>
         </a>
