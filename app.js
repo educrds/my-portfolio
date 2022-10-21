@@ -1,6 +1,8 @@
-const stars = document.getElementById("Stars");
-const moon = document.getElementById("Moon");
-const mens = document.getElementById("Mens");
+const stars = document.getElementById("bg-stars");
+const moon = document.getElementById("bg-moon");
+const mens = document.getElementById("bg-mens");
+const formVerification = document.getElementById("form-verification");
+const formContact = document.getElementById("contact-form");
 
 window.addEventListener("scroll", () => {
   let value = window.scrollY;
@@ -8,28 +10,18 @@ window.addEventListener("scroll", () => {
   moon.style.top = `${value * 0.5}px`;
 });
 
-const formVerificationOk = document.getElementById("form-verification-ok");
-const formVerificationError = document.getElementById(
-  "form-verification-error"
-);
-const nameInput = document.getElementById("name")
-const email= document.getElementById("email")
-const message= document.getElementById("message")
-
-document.getElementById("form").addEventListener("submit", (event) => {
+formContact.addEventListener("submit", (event) => {
   event.preventDefault();
-  emailjs.sendForm("service_tmp127n", "template_xtuqxuo", "#form").then(
+  emailjs.sendForm("service_tmp127n", "template_xtuqxuo", "#contact-form").then(
     () => {
-      formVerificationOk.style.display = "inherit";
-      nameInput.value= ""
-      email.value= ""
-      message.value= ""
+      formVerification.classList.add("ok");
+      formVerification.style.display = "inherit";
+      formContact.reset();
     },
     () => {
-      formVerificationError.style.display = "inherit";
-      nameInput.value= ""
-      email.value= ""
-      message.value= ""
+      formVerification.classList.add("error");
+      formVerification.style.display = "inherit";
+      formContact.reset();
     }
   );
 });

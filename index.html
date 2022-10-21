@@ -9,12 +9,6 @@
     />
     <title>Edu's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="imgs/favicon.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
     <script
       src="https://kit.fontawesome.com/95650c8b58.js"
       crossorigin="anonymous"
@@ -25,9 +19,15 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <nav class="navbar navbar-expand-md">
+  <nav class="navbar navbar-expand-md" id="sec-home">
     <a class="navbar-brand nav-link" href="#">edu.</a>
     <button
       class="navbar-toggler"
@@ -63,9 +63,9 @@
     </div>
   </nav>
   <section>
-    <img src="./imgs/STARS.png" id="Stars" alt="estrelas de fundo" />
-    <img src="./imgs/MOON.png" id="Moon" alt="lua de fundo" />
-    <img src="./imgs/MENS.png" id="Mens" alt="homens no deserto de fundo" />
+    <img src="./imgs/STARS.png" id="bg-stars" alt="estrelas de fundo" />
+    <img src="./imgs/MOON.png" id="bg-moon" alt="lua de fundo" />
+    <img src="./imgs/MENS.png" id="bg-mens" alt="homens no deserto de fundo" />
   </section>
   <div class="container container-1 text-center">
     <h1>Olá, sou Eduardo!</h1>
@@ -75,72 +75,56 @@
       visualmente agradavéis e bem escritas.
     </p>
   </div>
-  <div class="section">
+  <div class="content">
     <div class="container container-2">
-      <div
-        class="row row-cols-lg-7 row-cols-sm-5 row-cols-3 gy-2 justify-content-center"
-      >
-        <div class="col squares text-center">
+      <div class="row row-cols-3 gy-2 justify-content-center text-center">
+        <div class="col squares">
           <img src="./imgs/FIGMA.svg" alt="logo figma" />
           <p>Figma</p>
-          <div class="container-bar">
-            <div class="progress progress-striped">
-              <div class="progress-bar figma"></div>
-            </div>
+          <div class="progress">
+            <div class="progress-bar figma"></div>
           </div>
         </div>
-        <div class="col squares text-center">
+        <div class="col squares">
           <img src="./imgs/BOOTSTRAP.svg" alt="logo bootstrap" />
           <p>Bootstrap</p>
-          <div class="container-bar">
-            <div class="progress progress-striped">
-              <div class="progress-bar bootstrap"></div>
-            </div>
+          <div class="progress">
+            <div class="progress-bar bootstrap"></div>
           </div>
         </div>
-        <div class="col squares text-center">
+        <div class="col squares">
           <img src="./imgs/HTML.svg" alt="logo HTML" />
           <p>HTML</p>
-          <div class="container-bar">
-            <div class="progress progress-striped">
-              <div class="progress-bar html"></div>
-            </div>
+          <div class="progress">
+            <div class="progress-bar html"></div>
           </div>
         </div>
-        <div class="col squares text-center">
+        <div class="col squares">
           <img src="./imgs/CSS.svg" alt="logo CSS" />
           <p>CSS</p>
-          <div class="container-bar">
-            <div class="progress progress-striped">
-              <div class="progress-bar css"></div>
-            </div>
+          <div class="progress">
+            <div class="progress-bar css"></div>
           </div>
         </div>
-        <div class="col squares text-center">
+        <div class="col squares">
           <img src="./imgs/JS.svg" alt="logo Javascript" />
           <p>Javascript</p>
-          <div class="container-bar">
-            <div class="progress progress-striped">
-              <div class="progress-bar js"></div>
-            </div>
+          <div class="progress">
+            <div class="progress-bar js"></div>
           </div>
         </div>
-        <div class="col squares text-center">
+        <div class="col squares">
           <img src="./imgs/GIT.svg" alt="logo Git" />
           <p>Git</p>
-          <div class="container-bar">
-            <div class="progress progress-striped">
-              <div class="progress-bar git"></div>
-            </div>
+          <div class="progress">
+            <div class="progress-bar git"></div>
           </div>
         </div>
-        <div class="col squares text-center">
+        <div class="col squares">
           <img src="./imgs/GITHUB.svg" alt="logo Github" />
           <p>Github</p>
-          <div class="container-bar">
-            <div class="progress progress-striped">
-              <div class="progress-bar github"></div>
-            </div>
+          <div class="progress">
+            <div class="progress-bar github"></div>
           </div>
         </div>
       </div>
@@ -148,22 +132,22 @@
     <div class="container container-3" id="sec-sobre-mim">
       <h3>Sobre mim</h3>
       <div class="row sobre-mim-row">
-        <div class="col col-lg-3 col-md-3 col-12 sobre-mim-card">
-          <div class="card profile-card-3 text-center">
-            <div class="background-block"></div>
-            <div class="profile-thumb-block">
-              <img src="./imgs/foto.jpg" alt="profile-image" class="profile" />
-            </div>
+        <div class="col col-lg-4 col-md-5 col-12 sobre-mim-card">
+          <div class="card profile-card text-center">
+            <div class="cover-background"></div>
+            <img
+              src="./imgs/foto.jpg"
+              alt="imagem de perfil"
+              class="profile-photo"
+            />
             <div class="card-content">
-              <h2>Eduardo Cardoso</h2>
-              <div class="icon-block">
-                <p>21 anos</p>
-                <p><i class="fa-solid fa-location-dot"></i> Brasília-DF</p>
-                <p>
-                  <i class="fa-solid fa-graduation-cap"></i> Engenharia de
-                  Software<br /><small>(cursando)</small>
-                </p>
-              </div>
+              <div class="profile-name">Eduardo Cardoso</div>
+              <p>21 anos</p>
+              <p><i class="fa-solid fa-location-dot"></i> Brasília-DF</p>
+              <p>
+                <i class="fa-solid fa-graduation-cap"></i> Engenharia de
+                Software<br /><small>(cursando)</small>
+              </p>
             </div>
           </div>
         </div>
@@ -188,45 +172,26 @@
             <a
               href="https://www.linkedin.com/in/eduardo-cardoso-50b5141ba/"
               target="_blank"
-              rel="noopener noreferrer"
             >
-              <button
-                type="button"
-                class="btn btn-round btn-linkedin mr-md-3 mb-2 mb-md-0"
-                style="user-select: auto"
-              >
-                <i class="fa-brands fa-linkedin" style="user-select: auto"></i>
+              <button class="btn btn-linkedin">
+                <i class="fa-brands fa-linkedin"></i>
               </button>
             </a>
-            <a
-              href="./assets/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="link-CV"
-            >
-              <button
-                type="button"
-                class="btn btn-primary mr-md-3 mb-md-0 mb-2"
-                style="user-select: auto"
-              >
-                Baixar Currículo
-              </button>
+            <a href="./assets/resume.pdf" target="_blank">
+              <button class="btn btn-primary">Baixar Currículo</button>
             </a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="container"></div>
-
   <div class="container container-4" id="sec-projetos">
     <h3>Projetos</h3>
     <div class="row">
       <div class="col squares container-4-squares">
-        <img src="./imgs/rope.png" alt="" />
+        <img src="./imgs/rope.png" alt="ícone de corda" />
         <h4>Hangman Game</h4>
-        <p>Recriação do game Hangman utilizando Javascript, CSS e HTML.</p>
+        <p>Recriação do jogo da forca utilizando Javascript, CSS e HTML.</p>
         <div class="container-4-icons">
           <a href="https://github.com/educrds/HangMan-Game" target="_blank"
             ><i class="fa fa-github"></i
@@ -237,7 +202,7 @@
         </div>
       </div>
       <div class="col squares container-4-squares">
-        <img src="./imgs/SUN.png" alt="" />
+        <img src="./imgs/SUN.png" alt="ícone do Sol" />
         <h4>Weather App</h4>
         <p>
           Aplicativo criado para visualizar principais indicadores do clima das
@@ -258,14 +223,19 @@
   <div class="container container-5" id="sec-trajetoria">
     <h3>Trajetória</h3>
     <div class="col-12">
-      <div class="timeline-centered timeline-sm">
-        <article class="timeline-entry">
-          <div class="timeline-entry-inner">
-            <time datetime="2014-01-10T03:45" class="timeline-time"
-              ><span>Outubro</span><span class="text-muted">2022</span></time
-            >
+      <div class="timeline-centered">
+        <article class="timeline-entry right-aligned">
+          <div class="timeline-entry-content">
+            <div class="timeline-time">
+              <div class="month">Outubro</div>
+              <div class="year">2022</div>
+            </div>
             <div class="timeline-icon coursera">
-              <img width="45" src="./imgs/coursera-logo-400x57.png" alt="" />
+              <img
+                width="45"
+                src="./imgs/coursera-logo-400x57.png"
+                alt="logo Coursera"
+              />
             </div>
             <div class="timeline-label coursera">
               <h5 class="timeline-title">Google UX Design</h5>
@@ -273,12 +243,13 @@
           </div>
         </article>
         <article class="timeline-entry left-aligned">
-          <div class="timeline-entry-inner">
-            <time datetime="2014-01-10T03:45" class="timeline-time"
-              ><span>Setembro</span><span class="text-muted">2022</span></time
-            >
+          <div class="timeline-entry-content">
+            <div class="timeline-time">
+              <div class="month">Setembro</div>
+              <div class="year">2022</div>
+            </div>
             <div class="timeline-icon udemy">
-              <img width="45" src="./imgs/udemy-256.png" alt="" />
+              <img width="45" src="./imgs/udemy-256.png" alt="logo Udemy" />
             </div>
             <div class="timeline-label udemy">
               <h5 class="timeline-title">
@@ -287,27 +258,32 @@
             </div>
           </div>
         </article>
-        <article class="timeline-entry">
-          <div class="timeline-entry-inner">
-            <time datetime="2014-01-09T13:22" class="timeline-time"
-              ><span>Agosto</span><span class="text-muted">2022</span></time
-            >
+        <article class="timeline-entry right-aligned">
+          <div class="timeline-entry-content">
+            <div class="timeline-time">
+              <div class="month">Agosto</div>
+              <div class="year">2022</div>
+            </div>
             <div class="timeline-icon simplilearn">
-              <img width="45" src="./imgs/Simplilearn.png" alt="" />
+              <img
+                width="45"
+                src="./imgs/Simplilearn.png"
+                alt="logo Simplilearn"
+              />
             </div>
             <div class="timeline-label simplilearn">
               <h5 class="timeline-title">Git Training</h5>
             </div>
           </div>
-          <div class="timeline-entry-inner"></div>
         </article>
         <article class="timeline-entry left-aligned">
-          <div class="timeline-entry-inner">
-            <time datetime="2014-01-10T03:45" class="timeline-time"
-              ><span>Junho</span><span class="text-muted">2022</span></time
-            >
+          <div class="timeline-entry-content">
+            <div class="timeline-time">
+              <div class="month">Junho</div>
+              <div class="year">2022</div>
+            </div>
             <div class="timeline-icon bradesco">
-              <img width="30" src="./imgs/Bradesco.png" alt="" />
+              <img width="30" src="./imgs/Bradesco.png" alt="logo Bradesco" />
             </div>
             <div class="timeline-label bradesco">
               <h5 class="timeline-title">
@@ -319,106 +295,68 @@
       </div>
     </div>
   </div>
-  <div
-    class="container container-contact100 container-6"
-    id="sec-contato"
-    style="user-select: auto"
-  >
+  <div class="container container-contact container-6" id="sec-contato">
     <h3>Contato</h3>
-    <div class="wrap-contact100" style="user-select: auto">
-      <form
-        id="form"
-        class="contact100-form validate-form"
-        method="post"
-        style="user-select: auto"
-      >
-        <div class="contact100-form-title" style="user-select: auto">
+    <div class="wrap-contact">
+      <form id="contact-form" class="contact-form validate-form" method="post">
+        <div class="contact-form-title">
           <h3>
             Diga um Oi
             <img
               src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/waving-hand_1f44b.png"
-              srcset="
-                https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/waving-hand_1f44b.png 2x
-              "
-              alt="Waving Hand on Apple iOS 15.4"
+              alt="Emoji mãos acenando"
               width="40"
               height="40"
-              style="user-select: auto"
             />
           </h3>
-          <div id="form-verification-ok">
-            <p class="form-verification-title-ok">
-              <i class="fa-solid fa-circle-check"></i> Mensagem enviada com
-              sucesso.
-            </p>
-          </div>
-          <div id="form-verification-error">
-            <p class="form-verification-title-error">
-              <i class="fa-solid fa-circle-xmark error"></i> Erro ao enviar
-              mensagem.
+          <div id="form-verification" class="verification">
+            <p class="title">
+              <i class="message-icon"></i>
             </p>
           </div>
         </div>
-        <div
-          class="wrap-input100 validate-input"
-          data-validate="Name is required"
-          style="user-select: auto"
-        >
-          <span class="label-input100" style="user-select: auto">Seu Nome</span>
+        <div class="wrap-input validate-input" data-validate="Name is required">
+          <span class="label-input">Seu Nome</span>
           <input
-            class="input100"
-            type="text"
+            class="input"
             name="name"
             id="name"
             placeholder="Insira seu nome"
-            style="user-select: auto"
           />
-          <span class="focus-input100" style="user-select: auto"></span>
+          <span class="focus-input"></span>
         </div>
         <div
-          class="wrap-input100 validate-input"
+          class="wrap-input validate-input"
           data-validate="Valid email is required: ex@abc.xyz"
-          style="user-select: auto"
         >
-          <span class="label-input100" style="user-select: auto">Email</span>
+          <span class="label-input">Email</span>
           <input
-            class="input100"
+            class="input"
             type="email"
             name="email"
             id="email"
             placeholder="Insira seu endereço de email"
-            style="user-select: auto"
             required
           />
-          <span class="focus-input100" style="user-select: auto"></span>
+          <span class="focus-input"></span>
         </div>
         <div
-          class="wrap-input100 validate-input"
+          class="wrap-input validate-input"
           data-validate="Message is required"
-          style="user-select: auto"
         >
-          <span class="label-input100" style="user-select: auto">Mensagem</span>
+          <span class="label-input">Mensagem</span>
           <textarea
-            class="input100"
+            class="input"
             name="message"
             id="message"
             placeholder="Sua mensagem aqui..."
-            style="user-select: auto"
             required
           ></textarea>
-          <span class="focus-input100" style="user-select: auto"></span>
+          <span class="focus-input"></span>
         </div>
-        <div class="container-contact100-form-btn" style="user-select: auto">
-          <div class="wrap-contact100-form-btn" style="user-select: auto">
-            <div class="contact100-form-bgbtn" style="user-select: auto"></div>
-            <button
-              class="contact100-form-btn"
-              style="user-select: auto"
-              type="submit"
-            >
-              <span style="user-select: auto"> Enviar </span>
-            </button>
-          </div>
+        <div class="wrap-contact-btn">
+          <div class="contact-bg-btn"></div>
+          <button class="contact-btn" type="submit">Enviar</button>
         </div>
       </form>
     </div>
@@ -427,21 +365,19 @@
   <div class="container-fluid">
     <footer
       class="d-flex flex-wrap justify-content-between align-items-center py-1 my-3 border-bottom"
-      style="user-select: auto"
     >
-      <div class="col-md-4 d-flex align-items-center" style="user-select: auto">
-        <a class="navbar-brand" href="#">edu.</a>
+      <div class="col-md-4 d-flex align-items-center">
+        <a class="navbar-brand" href="#sec-home">edu.</a>
       </div>
       <ul class="d-flex list-unstyled footer-list-icons text-center">
-        <a href="http://" target="_blank" rel="noopener noreferrer">
-          <li class="me-4"><i class="fa-brands fa-instagram"></i></li>
-        </a>
-
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/eduardo-cardoso-50b5141ba/"
+          target="_blank"
+        >
           <li class="me-4"><i class="fa-brands fa-linkedin"></i></li>
         </a>
 
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/educrds" target="_blank">
           <li>
             <i class="fa-brands fa-github"></i>
           </li>
@@ -453,11 +389,8 @@
     </div>
   </div>
   <body>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
       (function () {
         emailjs.init("d3t9oBtzvBtCZAKpb");
       })();
