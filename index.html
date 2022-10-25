@@ -27,6 +27,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+  <body>
   <nav class="navbar navbar-expand-md" id="sec-home">
     <a class="navbar-brand nav-link" href="#">edu.</a>
     <button
@@ -41,7 +42,7 @@
       <span class="fa-solid fa-ellipsis-vertical menu-icon"></span>
     </button>
     <div
-      class="collapse navbar-collapse justify-content-end"
+      class="collapse navbar-collapse justify-content-end text-end"
       id="navbarTogglerDemo02"
     >
       <ul class="navbar-nav">
@@ -127,13 +128,20 @@
             <div class="progress-bar github"></div>
           </div>
         </div>
+        <div class="col squares">
+          <img src="./imgs/REACT.svg" alt="logo React" />
+          <p>React</p>
+          <div class="progress">
+            <div class="progress-bar react"></div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="container container-3" id="sec-sobre-mim">
       <h3>Sobre mim</h3>
       <div class="row sobre-mim-row">
-        <div class="col col-lg-4 col-md-5 col-12 sobre-mim-card">
-          <div class="card profile-card text-center">
+        <div class="col col-lg-4 col-md-5 col-12 sobre-mim-card py-sm-2">
+          <div class="card profile-card text-center ">
             <div class="cover-background"></div>
             <img
               src="./imgs/foto.jpg"
@@ -388,7 +396,6 @@
       <p>© Eduardo Cardoso, 2022. Todos os direitos reservados</p>
     </div>
   </div>
-  <body>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
       (function () {

@@ -75,15 +75,6 @@ a {
   font-size: 2rem;
   font-weight: 700;
 }
-.navbar-collapse {
-  text-align: right;
-}
-.nav-link {
-  color: var(--white-color-font);
-}
-.nav-link:hover {
-  color: var(--purple-color);
-}
 .navbar-toggler {
   border: none;
 }
@@ -94,6 +85,13 @@ a {
   color: var(--white-color-font);
   font-size: 1.5rem;
 }
+.nav-link {
+  color: var(--white-color-font);
+}
+.nav-link:hover {
+  color: var(--purple-color);
+}
+/* ----------------------------Background---------------------------- */
 section {
   height: 100vh;
   overflow: hidden;
@@ -165,7 +163,6 @@ section img {
     0 1px rgba(255, 255, 255, 0.05);
   height: 8px;
 }
-
 .progress-bar {
   background-color: #7b2cbf;
   background-image: linear-gradient(
@@ -181,7 +178,9 @@ section img {
   border-radius: 6px;
   height: 8px;
 }
-
+.progress-bar.react{
+  width: 20%;
+}
 .progress-bar.git,
 .progress-bar.github {
   width: 35%;
@@ -215,15 +214,6 @@ section img {
   float: left;
   height: 200px;
   overflow: hidden;
-  width: 100%;
-}
-.profile-card .cover-background .background {
-  -webkit-filter: blur(0.7px);
-  filter: blur(0.7px);
-  opacity: 0.9;
-  -webkit-transform: scale(1.8);
-  transform: scale(2.8);
-  vertical-align: top;
   width: 100%;
 }
 .profile-card .profile-photo {
@@ -266,9 +256,9 @@ section img {
 .container-3-content {
   max-width: max-content;
 }
+.btn.btn-linkedin, 
 .btn-primary,
-.btn.btn-primary:hover,
-.btn.btn-linkedin {
+.btn.btn-primary:hover{
   background: var(--purple-color);
   border-color: var(--purple-color);
   color: var(--white-color-font);
@@ -280,8 +270,7 @@ section img {
   color: var(--purple-color);
 }
 
-/* ----------------------------container-4-squares
----------------------------- */
+/* ----------------------------container-4-squares---------------------------- */
 .container-4-icons {
   text-align: end;
 }
