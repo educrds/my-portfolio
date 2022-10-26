@@ -145,8 +145,8 @@ section img {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   color: var(--purple-color);
   margin-right: 1vw;
-  max-width: 140px;
   padding: 20px;
+  width: 130px;
 }
 .squares img {
   width: 32px;
@@ -178,7 +178,7 @@ section img {
   border-radius: 6px;
   height: 8px;
 }
-.progress-bar.react{
+.progress-bar.react {
   width: 20%;
 }
 .progress-bar.git,
@@ -256,14 +256,13 @@ section img {
 .container-3-content {
   max-width: max-content;
 }
-.btn.btn-linkedin, 
+.btn.btn-linkedin,
 .btn-primary,
-.btn.btn-primary:hover{
+.btn.btn-primary:hover {
   background: var(--purple-color);
   border-color: var(--purple-color);
   color: var(--white-color-font);
   font-weight: 500;
-
 }
 .btn.btn-primary:hover {
   opacity: 0.9;
@@ -374,18 +373,24 @@ section img {
 .right-aligned .timeline-entry-content {
   margin-left: -31px;
 }
+
 .left-aligned .timeline-time {
   left: auto;
+  padding: 10px;
+  position: absolute;
   right: -115px;
   text-align: left;
+  width: 100px;
 }
-.left-aligned .timeline-time,
+
 .right-aligned .timeline-time {
   left: -115px;
   padding: 10px;
   position: absolute;
   text-align: right;
+  width: 100px;
 }
+
 .timeline-time .month {
   font-size: 1.1rem;
   font-weight: 700;
@@ -452,6 +457,21 @@ section img {
 }
 .timeline-title {
   color: var(--purple-color);
+}
+.timeline-tag{
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding: 5px;
+}
+
+.timeline-tag.hour {
+  background-color: #d5d8de;
+  color: #686868;
+}
+.timeline-tag.state {
+  background-color: #C3E6CB;
+  color: #0ACF83;
 }
 /* ----------------------------Verification Message---------------------------- */
 .verification {
