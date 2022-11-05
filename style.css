@@ -488,7 +488,7 @@ section img {
   color: #35d39d;
 }
 .ok i:before {
-  content: "\f007";
+  content: "\f058";
   font: var(--fa-font-solid);
 }
 .ok p:after {
@@ -499,7 +499,7 @@ section img {
   color: #f64455;
 }
 .error i:before {
-  content: "\f007";
+  content: "\f06a";
   font: var(--fa-font-solid);
 }
 .error p:after {
