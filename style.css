@@ -420,6 +420,10 @@ section img {
 .timeline-icon.udemy {
   background-color: #fff;
 }
+
+.timeline-icon.dio {
+  background-color: #000;
+}
 .timeline-label {
   background: var(--white-color-font);
   border-radius: 15px;
