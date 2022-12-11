@@ -272,6 +272,22 @@ section img {
 }
 
 /* ----------------------------container-4-squares---------------------------- */
+.project-squares {
+  background-color: var(--white-color-font);
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  color: var(--purple-color);
+  margin-right: 1vw;
+  padding: 20px;
+}
+.project-squares img {
+  width: 32px;
+}
+.project-squares p {
+  font-size: 17px;
+  line-height: 23px;
+  margin: 8px 0;
+}
 .container-4-icons {
   text-align: end;
 }
@@ -284,8 +300,8 @@ section img {
   padding-left: 10px;
 }
 .container-4-squares {
-  max-width: 300px;
-  text-align: left;
+  margin-bottom: 1vh;
+  max-width: 255px;
 }
 .container-4-squares h4 {
   font-weight: 700;
