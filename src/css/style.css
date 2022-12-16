@@ -196,7 +196,7 @@ section img {
 }
 .profile-card .profile-photo {
   border-radius: 50%;
-  bottom: 63%;
+  bottom: 65%;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
   left: 50%;
   max-width: 100px;
@@ -215,7 +215,7 @@ section img {
   bottom: 30px;
   color: var(--purple-color);
   position: relative;
-  z-index: 9999;
+  z-index: 1;
 }
 .profile-card .card-content::before {
   background: var(--white-color-font);
