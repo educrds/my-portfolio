@@ -176,22 +176,6 @@ section img {
   border-radius: 6px;
   height: 8px;
 }
-.progress-bar.react {
-  width: 20%;
-}
-.progress-bar.git,
-.progress-bar.github {
-  width: 35%;
-}
-.progress-bar.bootstrap,
-.progress-bar.figma,
-.progress-bar.html {
-  width: 75%;
-}
-.progress-bar.js,
-.progress-bar.css {
-  width: 50%;
-}
 /* ----------------------------Profile Card---------------------------- */
 .profile-card {
   background-color: var(--white-color-font);
@@ -250,6 +234,10 @@ section img {
 .container-3-content {
   max-width: max-content;
 }
+.badge {
+  font-size: 0.5em;
+}
+.badge,
 .btn-primary,
 .btn.btn-linkedin,
 .btn.btn-primary:hover {
@@ -271,7 +259,7 @@ section img {
   border-radius: 25px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   color: var(--purple-color);
-  margin-right: 1vw;
+  margin-right: 0.8vw;
   padding: 20px;
 }
 .project-squares img {
@@ -283,6 +271,9 @@ section img {
   margin: 8px 0;
 }
 .container-4-icons {
+  bottom: 25px;
+  position: absolute;
+  right: 20px;
   text-align: end;
 }
 .container-4-icons a:hover {
@@ -290,62 +281,25 @@ section img {
 }
 .container-4-icons i {
   color: var(--purple-color);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding-left: 10px;
 }
 .container-4-squares {
-  margin-bottom: 1vh;
-  max-width: 255px;
+  height: 285px;
+  margin: 1vh 1vh;
+  position: relative;
+  width: 255px;
 }
 .container-4-squares h4 {
   font-weight: 700;
+}
+.container-4-squares p {
+  min-height: 90px;
 }
 .container-4-squares img {
   padding: 10px 0;
 }
 
-/* ----------------------------XS Devices---------------------------- */
-
-@media (max-width: 576px) {
-  .container-3 h3 {
-    text-align: center;
-  }
-  .img {
-    padding-bottom: 2vh;
-    text-align: center;
-  }
-  .row {
-    gap: 1vh;
-    justify-content: center;
-  }
-  .container-3 h3 {
-    text-align: center;
-  }
-  .container-3-squares {
-    max-width: 200px;
-  }
-  .container-3-squares h4 {
-    font-size: 1.2rem;
-  }
-  .container-3-squares p {
-    font-size: 0.9rem;
-  }
-  .container-3-squares .profile-card-2 .profile-name {
-    font-size: 1rem;
-  }
-  .sobre-mim-card {
-    padding: 8px 8px;
-  }
-  .timeline-title {
-    font-size: 1rem;
-  }
-  .container h3 {
-    text-align: center;
-  }
-  .wrap-contact {
-    padding: 30px 15px 30px !important;
-  }
-}
 /* ---------------------------Timeline Section---------------------------- */
 .timeline-centered {
   position: relative;
@@ -600,6 +554,7 @@ textarea.input {
   padding-top: 9px;
 }
 .input:focus + .focus-input::before {
+  background-color: var(--purple-color);
   width: 100%;
 }
 
@@ -634,4 +589,42 @@ textarea.input {
 }
 .footer-list-icons a:hover {
   color: var(--purple-color);
+}
+
+/* ----------------------------XS Devices---------------------------- */
+
+@media (max-width: 576px) {
+  /* Section Title */
+  .container h3 {
+    text-align: center;
+  }
+
+  /* Sobre Mim Section */
+  .container-3 h3 {
+    text-align: center;
+  }
+  .row {
+    gap: 1vh;
+    justify-content: center;
+  }
+  .sobre-mim-card {
+    padding: 8px 8px;
+  }
+
+  /* Projetos Section */
+  .container-4-squares {
+    height: 300px;
+    margin: 0.2vh 0.2vh;
+    position: relative;
+    width: 255px;
+  }
+  /* Timeline Section */
+  .timeline-title {
+    font-size: 1rem;
+  }
+
+  /* Contact */
+  .wrap-contact {
+    padding: 30px 15px 30px !important;
+  }
 }
