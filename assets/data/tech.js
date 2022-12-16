@@ -2,7 +2,7 @@ const data = [
   {
     name: 'Figma',
     progress: 70,
-    icon: 'https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=670&h=670&q=75&fit=max&auto=format',
+    icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968705.png',
   },
   {
     name: 'Bootstrap',
@@ -22,12 +22,12 @@ const data = [
   {
     name: 'CSS',
     progress: 55,
-    icon: 'https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png',
+    icon: 'https://cdn-icons-png.flaticon.com/512/732/732190.png',
   },
   {
     name: 'Github',
     progress: 50,
-    icon: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+    icon: 'https://cdn-icons-png.flaticon.com/512/4926/4926624.png',
   },
   {
     name: 'Git',
@@ -37,7 +37,7 @@ const data = [
   {
     name: 'React',
     progress: 20,
-    icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png',
+    icon: 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png',
   },
   {
     name: 'MySQL',
@@ -47,7 +47,7 @@ const data = [
   {
     name: 'Node',
     progress: 20,
-    icon: 'https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png',
+    icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968322.png',
   },
 ];
 
