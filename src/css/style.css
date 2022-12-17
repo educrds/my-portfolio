@@ -370,6 +370,9 @@ section img {
   text-align: center;
   width: 60px;
 }
+.timeline-icon img {
+  width: 45px;
+}
 .left-aligned .timeline-icon {
   float: right;
 }
@@ -381,7 +384,8 @@ section img {
 }
 .timeline-icon.bradesco,
 .timeline-icon.coursera,
-.timeline-icon.udemy {
+.timeline-icon.udemy,
+.timeline-icon.udacity {
   background-color: #fff;
 }
 
