@@ -13,6 +13,12 @@ function parallax() {
   moon.style.top = `${value * 0.55}px`;
 }
 
+// Scroll Animation 
+ScrollReveal().reveal('.project-squares',{ interval: 350 });
+ScrollReveal().reveal('.timeline-entry',{ interval: 350 });
+ScrollReveal().reveal('.sobre-mim-row',{ interval: 350 });
+ScrollReveal().reveal('.contact-form',{ distance: '70px' });
+
 function handleContact(e) {
   e.preventDefault();
   
