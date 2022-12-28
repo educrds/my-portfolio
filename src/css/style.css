@@ -177,12 +177,15 @@ section img {
   height: 8px;
 }
 /* ----------------------------Profile Card---------------------------- */
+.sobre-mim-card {
+  margin: auto;
+}
 .profile-card {
   background-color: var(--white-color-font);
   border: none;
   border-radius: 25px;
   float: left;
-  height: 320px;
+  height: 255px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -190,8 +193,8 @@ section img {
 .profile-card .cover-background {
   background: url('../../assets/imgs/wallpaper.jpg');
   background-position: bottom;
-  float: left;
-  height: 190px;
+  /* float: left; */
+  height: 150px;
   overflow: hidden;
   width: 100%;
 }
@@ -235,10 +238,6 @@ section img {
   margin: auto;
   max-width: max-content;
 }
-.badge {
-  font-size: 0.5em;
-}
-.badge,
 .btn-primary,
 .btn.btn-linkedin,
 .btn.btn-primary:hover {
