@@ -188,15 +188,16 @@ section img {
   width: 100%;
 }
 .profile-card .cover-background {
-  background: linear-gradient(90.7deg, rgb(0, 32, 95) 2.8%, rgb(83, 34, 90) 97.8%);
+  background: url('../../assets/imgs/wallpaper.jpg');
+  background-position: bottom;
   float: left;
-  height: 200px;
+  height: 190px;
   overflow: hidden;
   width: 100%;
 }
 .profile-card .profile-photo {
   border-radius: 50%;
-  bottom: 65%;
+  bottom: 50%;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
   left: 50%;
   max-width: 100px;
@@ -208,18 +209,17 @@ section img {
 .profile-card .profile-name {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 0 0 5px;
 }
 .profile-card .card-content {
   background-color: var(--white-color-font);
-  bottom: 30px;
+  bottom: 22px;
   color: var(--purple-color);
   position: relative;
   z-index: 1;
 }
 .profile-card .card-content::before {
   background: var(--white-color-font);
-  bottom: 40px;
+  bottom: 36px;
   content: '';
   height: 100%;
   left: 0;
@@ -232,6 +232,7 @@ section img {
   width: 80px;
 }
 .container-3-content {
+  margin: auto;
   max-width: max-content;
 }
 .badge {
