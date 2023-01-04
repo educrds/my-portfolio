@@ -370,6 +370,10 @@ section img {
   text-align: center;
   width: 60px;
 }
+.timeline-icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
 .timeline-icon img {
   width: 45px;
 }
