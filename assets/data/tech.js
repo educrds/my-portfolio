@@ -1,5 +1,10 @@
 const data = [
   {
+    name: 'HTML',
+    progress: 75,
+    icon: 'https://cdn-icons-png.flaticon.com/512/732/732212.png',
+  },
+  {
     name: 'Figma',
     progress: 70,
     icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968705.png',
@@ -10,33 +15,28 @@ const data = [
     icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968672.png',
   },
   {
-    name: 'HTML',
-    progress: 70,
-    icon: 'https://cdn-icons-png.flaticon.com/512/732/732212.png',
-  },
-  {
     name: 'JS',
-    progress: 60,
+    progress: 70,
     icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png',
   },
   {
     name: 'CSS',
-    progress: 55,
+    progress: 65,
     icon: 'https://cdn-icons-png.flaticon.com/512/732/732190.png',
   },
   {
     name: 'Github',
-    progress: 50,
+    progress: 55,
     icon: 'https://cdn-icons-png.flaticon.com/512/4926/4926624.png',
   },
   {
     name: 'Git',
-    progress: 40,
+    progress: 55,
     icon: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png',
   },
   {
     name: 'React',
-    progress: 20,
+    progress: 40,
     icon: 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png',
   },
   {

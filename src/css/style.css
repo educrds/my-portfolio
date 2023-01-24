@@ -49,13 +49,11 @@ a {
 /* ----------------------------Scrollbar Style---------------------------- */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
-  box-shadow: inset 0 1px 2px rgba(114, 110, 110, 0.25),
-    0 1px rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 1px 2px rgba(114, 110, 110, 0.25), 0 1px rgba(255, 255, 255, 0.05);
 }
 
 ::-webkit-scrollbar {
-  box-shadow: inset 0 1px 2px rgba(114, 110, 110, 0.25),
-    0 1px rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 1px 2px rgba(114, 110, 110, 0.25), 0 1px rgba(255, 255, 255, 0.05);
   width: 10px;
 }
 
@@ -178,7 +176,7 @@ section img {
 }
 /* ----------------------------Profile Card---------------------------- */
 .sobre-mim-card {
-  margin: auto;
+  padding-bottom: 0 !important;
 }
 .profile-card {
   background-color: var(--white-color-font);
@@ -235,7 +233,6 @@ section img {
   width: 80px;
 }
 .container-3-content {
-  margin: auto;
   max-width: max-content;
 }
 .btn-primary,
