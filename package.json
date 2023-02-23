@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://educrds.github.io/edu-portfolio/v2/",
+  "homepage": "https://educrds.github.io/edu-portfolio/",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
