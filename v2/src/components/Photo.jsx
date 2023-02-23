@@ -1,5 +1,5 @@
-const Photo = ({ className }) => (
-  <img className={className} src='/src/assets/imgs/photo.png' />
-);
+import photo from '../assets/imgs/photo.png';
+
+const Photo = ({ className }) => <img className={className} src={photo} />;
 
 export default Photo;
