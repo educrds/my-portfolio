@@ -128,6 +128,10 @@ footer {
     font-size: 2rem;
     cursor: pointer;
     filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 3px 3px);
+    @include themify($themes) {
+      color: themed('fontColor');
+    }
+
     &:hover {
       color: #ffd15c;
       transform: scale(1.1);

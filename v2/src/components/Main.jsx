@@ -13,7 +13,7 @@ const socialNetworks = [
 
 // Componente da seção principal
 const Main = () => (
-  <section>
+  <section id='home-section'>
     <motion.div
       className='mainCard'
       variants={mainCardVariants} // Variante de animação
@@ -24,7 +24,7 @@ const Main = () => (
       <Container>
         <Photo />
         <Title text='Eduardo Cardoso' />
-        <SmallTitle content="Front-End Developer" />
+        <SmallTitle content='Front-End Developer' />
         <SocialIcons />
       </Container>
     </motion.div>

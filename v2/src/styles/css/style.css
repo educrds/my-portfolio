@@ -140,6 +140,12 @@ footer svg {
   cursor: pointer;
   filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 3px 3px);
 }
+.theme-light footer svg {
+  color: #333;
+}
+.theme-dark footer svg {
+  color: #ccc;
+}
 footer svg:hover {
   color: #ffd15c;
   transform: scale(1.1);
