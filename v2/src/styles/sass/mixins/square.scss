@@ -1,0 +1,11 @@
+@mixin square {
+  @include themify($themes) {
+    background-color: themed('whiteColor');
+    color: themed('darkGray');
+  }
+
+  text-align: center;
+  border-radius: 2rem;
+  padding: 5vh 2.5vw;
+  box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 8px;
+}

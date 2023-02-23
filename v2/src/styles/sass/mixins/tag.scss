@@ -1,0 +1,28 @@
+@import '../tech-variables';
+
+@mixin tag {
+  .technologies {
+    gap: 0.3rem;
+    margin: 1vh 0 1.375vw;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+
+    .item {
+      border: solid 1px #333;
+      padding: 0.25vh 1vw;
+      border-radius: 10rem;
+      white-space: nowrap;
+      font-size: 0.9rem;
+      box-shadow: rgba(0, 0, 0, 0.10) 0px 1px 3px;
+
+    }
+    @each $technology in $technologies {
+      .item.#{$technology} {
+        background-color: get-color-for-technology($technology);
+        border: none;
+        color: #fdfdfd;
+      }
+    }
+  }
+}

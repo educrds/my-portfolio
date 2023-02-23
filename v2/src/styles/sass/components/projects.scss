@@ -1,0 +1,66 @@
+@import '../mixins/square';
+@import '../mixins/tag';
+
+.projects {
+  flex-wrap: wrap;
+  color: #333;
+  display: flex;
+  gap: 2rem;
+
+  > div {
+    @include tag;
+    @include square;
+    flex: 1 0 30%;
+    .title {
+      text-align: center;
+      gap: 0.5rem;
+      svg {
+        font-size: 1.75rem;
+      }
+    }
+    .description {
+      p {
+        margin-bottom: 4vh;
+        text-align: left;
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .links {
+    font-size: 1.35rem;
+    gap: 1rem;
+    transition-delay: 0.5s;
+    a {
+      color: #333;
+    }
+  }
+  .technologies,
+  .title,
+  .links {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 630px) {
+  .projects {
+    > div {
+      flex: 1 0 100%;
+      padding: 4vh 4vw;
+    }
+    .technologies {
+      .item {
+        padding: 0 3vw;
+      }
+    }
+  }
+}
+@media (min-width: 635px) and (max-width: 1167px) {
+  .projects {
+    > div {
+      flex: 1 0 40%;
+    }
+  }
+}

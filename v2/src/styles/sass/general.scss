@@ -1,0 +1,148 @@
+@import './theme-variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.03s ease-in-out, color 0.03s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  @include themify($themes) {
+    color: themed('fontColor');
+    background-color: themed('bgColor');
+  }
+
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 2vh 6vw;
+
+  @media (min-width: 1440px) {
+    padding: 2vh 20vw;
+  }
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 5vw;
+  a {
+    text-decoration: none;
+  }
+  li {
+    @include themify($themes) {
+      color: themed('fontColor');
+    }
+  }
+}
+
+button {
+  @include themify($themes) {
+    color: themed('darkGray');
+    background-color: themed('yellowColor');
+  }
+  padding: 1.5vh 2.5vw;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 0.935rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+nav {
+  align-items: center;
+}
+
+h1 {
+  font-weight: bold;
+}
+section {
+  margin: 20vh 0;
+}
+section {
+  > h1 {
+    margin: 4vh 0;
+    font-size: 2rem;
+    @include themify($themes) {
+      color: themed('fontColor');
+    }
+  }
+}
+
+input {
+  height: 10px;
+}
+
+input,
+textarea {
+  @include themify($themes) {
+    color: themed('darkGray');
+    background: themed('whiteColor');
+  }
+  width: 100%;
+  border: none;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-bottom: 3vh;
+  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+input::placeholder,
+textarea::placeholder {
+  font-weight: 500;
+  @include themify($themes) {
+    color: themed('lightGray');
+  }
+}
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
+svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+  svg {
+    font-size: 2rem;
+    cursor: pointer;
+    filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 3px 3px);
+    &:hover {
+      color: #ffd15c;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  section > h1 {
+    text-align: center;
+  }
+  button {
+    padding: 1.5vh 4vw;
+  }
+  input {
+    margin-bottom: 2vh;
+  }
+}

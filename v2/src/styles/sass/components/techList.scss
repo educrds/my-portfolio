@@ -1,0 +1,84 @@
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  @include themify($themes) {
+    background-color: themed('whiteColor');
+  }
+  color: #333;
+  box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 8px;
+  border-radius: 1.3rem;
+  padding: 3vh 1.5vw;
+  row-gap: 3vh;
+
+  div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+
+    svg {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--dark-gray);
+    }
+  }
+  .Javascript {
+    svg {
+      color: #f7d800;
+    }
+  }
+  .CSS {
+    svg {
+      color: #006cb4;
+    }
+  }
+  .Sass {
+    svg {
+      color: #c66394;
+    }
+  }
+  .HTML {
+    svg {
+      color: #f75421;
+    }
+  }
+  .Bootstrap {
+    svg {
+      color: #5b397b;
+    }
+  }
+  .Github {
+    svg {
+      color: #0d2534;
+    }
+  }
+  .MySQL {
+    svg {
+      color: #00718b;
+    }
+  }
+  .React {
+    svg {
+      color: #5ed3f3;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .tech-list {
+    div {
+      flex: 1 0 50%;
+    }
+  }
+}
+@media (min-width: 635px) and (max-width: 870px) {
+  .tech-list {
+    div {
+      flex: 1 0 calc(100% / 4);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@mixin setupProfilePhoto {
+  width: 130px;
+  border-radius: 100%;
+  filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 3px 8px);
+}
+@mixin setupArrowChatBallon {
+  border: 0.75em solid transparent;
+  border-left: none;
+  @include themify($themes) {
+    border-right-color: themed('whiteColor');
+  }
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 50px;
+}
+@mixin setup-display-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin bar {
+  height: 8px;
+  border-radius: 30px;
+}

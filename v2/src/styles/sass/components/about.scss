@@ -1,0 +1,55 @@
+@import '../mixins/mixins';
+
+.about {
+  display: flex;
+  > div {
+    flex: 1;
+    img {
+      @include setupProfilePhoto;
+    }
+  }
+  .summary {
+    @include themify($themes) {
+      background: themed('whiteColor');
+    }
+    color: #333;
+    display: flex;
+    flex: 5;
+
+    border-radius: 1.3rem;
+    padding: 3vh 3vw;
+    box-shadow: rgba(0, 0, 0, 0.08) -5px 3px 8px;
+    position: relative;
+    gap: 10px;
+    > div {
+      flex: 1;
+      button {
+        margin: 3vh 0 1.5vh;
+      }
+    }
+    .skills {
+      flex: 1;
+    }
+    &::after {
+      @include setupArrowChatBallon;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .photo {
+    display: none;
+  }
+}
+@media (max-width: 870px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2vh;
+    .summary {
+      flex-direction: column;
+      &::after {
+        border: none;
+      }
+    }
+  }
+}

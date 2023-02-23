@@ -1,0 +1,42 @@
+$technologies: (
+  'Node',
+  'React',
+  'JavaScript',
+  'Bootstrap',
+  'Styled-Components',
+  'Express',
+  'MongoDB',
+  'MySQL',
+  'PostgreSQL',
+  'Typescript',
+  'SocketIO',
+  'HTML',
+  'CSS'
+);
+
+$colors-for-technologies: (
+  'Node': #4da53f,
+  'MongoDB': #4da53f,
+  'HTML': #f75421,
+  'JavaScript': #f7d800,
+  'Styled-Components': #555,
+  'Express': #333,
+  'SocketIO': #333,
+  'React': #2f74c0,
+  'MySQL': #2f74c0,
+  'PostgreSQL': #2f74c0,
+  'Typescript': #2f74c0,
+  'CSS': #2f74c0,
+  'Bootstrap': #5e3b7f,
+);
+
+// Define a função que retorna a cor para uma tecnologia específica
+@function get-color-for-technology($technology) {
+  $default-color: #333;
+  @if map-has-key($colors-for-technologies, $technology) {
+    @return map-get($colors-for-technologies, $technology);
+  } @else {
+    @warn "A cor para a tecnologia #{$technology} não foi definida.";
+    @return $default-color;
+  }
+}

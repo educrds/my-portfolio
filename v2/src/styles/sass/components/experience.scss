@@ -1,0 +1,68 @@
+@import '../mixins/square';
+@import '../mixins/tag';
+
+.experience {
+  display: flex;
+  gap: 2rem;
+  color: #333;
+
+  .square {
+    @include square;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    // row-gap: 10px;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .column {
+    display: flex;
+    overflow: hidden;
+    .icon {
+      font-size: 1.6rem;
+      color: #ffd15c;
+      margin-right: 1rem;
+      svg {
+        margin-bottom: 0.5rem;
+      }
+    }
+    .line {
+      height: 100%;
+      width: 2px;
+      background: #ffd15c;
+      margin: auto;
+    }
+    .infos {
+      @include tag;
+      .technologies {
+        margin-bottom: 2.75vh;
+      }
+      > p {
+        color: #808080;
+      }
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+    }
+  }
+}
+@media (max-width: 630px) {
+  .experience {
+    flex-direction: column;
+  }
+  .experience {
+    .square {
+      padding: 5vh 6vw;
+    }
+  }
+}
+@media (min-width: 635px) and (max-width: 870px) {
+  .experience {
+    flex-direction: column;
+    .square {
+      padding: 5vh 4vw;
+    }
+  }
+}
