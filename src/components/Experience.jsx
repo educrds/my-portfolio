@@ -3,7 +3,7 @@ import { SmallTitle, Title } from './TitleVariants';
 import { TbCertificate } from 'react-icons/tb';
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { getTransformStyle } from '../utils';
+import { containerAnimation, getTransformStyle, itemAnimation } from '../utils';
 import { Technologies } from './Projects';
 
 const experienceList = [
@@ -52,25 +52,30 @@ const Experience = () => {
   return (
     <motion.section id='experience-section' ref={ref} style={getTransformStyle(isInView, '-200px')}>
       <Title text='Experiência' />
-      <Container className='experience'>
+      <motion.div
+        className='experience'
+        variants={containerAnimation}
+        initial='hidden'
+        animate={isInView ? 'visible' : 'hidden'}
+      >
         <ExperienceList />
-      </Container>
+      </motion.div>
     </motion.section>
   );
 };
 
 const ExperienceList = () => (
   <>
-    <div className='square'>
+    <motion.div className='square' variants={itemAnimation}>
       {experienceList.slice(0, 3).map((experience, i) => (
         <ExpInfo key={i} {...experience} />
       ))}
-    </div>
-    <div className='square'>
+    </motion.div>
+    <motion.div className='square' variants={itemAnimation}>
       {experienceList.slice(-3).map((experience, i) => (
         <ExpInfo key={i} {...experience} />
       ))}
-    </div>
+    </motion.div>
   </>
 );
 

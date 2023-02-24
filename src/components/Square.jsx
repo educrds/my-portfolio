@@ -1,15 +1,13 @@
-import Container from './Container';
 import { SmallTitle, Title } from './TitleVariants';
+import { motion } from 'framer-motion';
 
-const Square = ({ title, content, image }) => {
+const Square = ({ title, content, image, variants }) => {
   return (
-    <>
-      <Container>
-        <img src={image} />
-        <Title text={title} />
-        <SmallTitle content={content} />
-      </Container>
-    </>
+    <motion.div variants={variants}>
+      <img src={image} />
+      <Title text={title} />
+      <SmallTitle content={content} />
+    </motion.div>
   );
 };
 export default Square;

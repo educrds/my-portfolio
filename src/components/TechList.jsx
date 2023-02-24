@@ -1,9 +1,8 @@
-import { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
-import { SmallTitle, Title } from './TitleVariants';
 import { DiJavascript, DiMysql, DiGithubBadge, DiReact, DiSass, DiHtml5, DiBootstrap, DiCss3 } from 'react-icons/di';
-import Container from './Container';
-import { getTransformStyle } from '../utils';
+import { getTransformStyle, itemAnimation, containerAnimation } from '../utils';
+import { SmallTitle, Title } from './TitleVariants';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 const techList = [
   { techName: 'HTML', techIcon: <DiHtml5 /> },
@@ -23,21 +22,26 @@ const TechSkills = () => {
   return (
     <motion.section id='skills-section' ref={ref} style={getTransformStyle(isInView, '200px')}>
       <Title text='Tech Skills' />
-      <TechList />
+      <TechList isInView={isInView} />
     </motion.section>
   );
 };
 
-const TechList = () => {
+const TechList = ({ isInView }) => {
   return (
-    <Container className='tech-list'>
+    <motion.div
+      className='tech-list'
+      variants={containerAnimation}
+      initial='hidden'
+      animate={isInView ? 'visible' : 'hidden'}
+    >
       {techList.map(({ techName, techIcon }, i) => (
-        <Container key={i} className={techName}>
+        <motion.div key={i} className={techName} variants={itemAnimation}>
           {techIcon}
           <SmallTitle content={techName} />
-        </Container>
+        </motion.div>
       ))}
-    </Container>
+    </motion.div>
   );
 };
 

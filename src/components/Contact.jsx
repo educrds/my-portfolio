@@ -6,7 +6,7 @@ import { SmallTitle, Title } from './TitleVariants';
 import Button from './Button';
 import Container from './Container';
 import emailjs from '@emailjs/browser';
-import { getTransformStyle } from '../utils';
+import { containerAnimation, getTransformStyle, itemAnimation } from '../utils';
 
 const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -15,7 +15,7 @@ const Contact = () => {
   const isInView = useInView(ref, { once: true });
 
   const [validateMessage, setValidateMessage] = useState(null);
-  const [email, setEmail] = useState({name: '', email: '', subject: '', message: '' });
+  const [email, setEmail] = useState({ name: '', email: '', subject: '', message: '' });
 
   useEffect(() => {
     if (validateMessage && validateMessage.type === 'success') {
@@ -59,24 +59,19 @@ const Contact = () => {
   return (
     <motion.section id='contact-section' ref={ref} style={getTransformStyle(isInView, '200px')}>
       <Title text='Contato' />
-      <Container className='contact'>
+      <motion.div
+        className='contact'
+        variants={containerAnimation}
+        initial='hidden'
+        animate={isInView ? 'visible' : 'hidden'}
+      >
         <Header />
         <Container className='form'>
           {validateMessage && <Message message={validateMessage} />}
           <form onSubmit={handleSubmit}>
             <Container className='form-row'>
-              <Input
-                name='name'
-                placeholder='Nome'
-                onChange={handleChange}
-                value={email.name}
-              />
-              <Input
-                name='email'
-                placeholder='Email'
-                onChange={handleChange}
-                value={email.email}
-              />
+              <Input name='name' placeholder='Nome' onChange={handleChange} value={email.name} />
+              <Input name='email' placeholder='Email' onChange={handleChange} value={email.email} />
             </Container>
             <Container>
               <Input
@@ -87,30 +82,31 @@ const Contact = () => {
               />
             </Container>
             <Container>
-              <textarea
+              <motion.textarea
                 rows='3'
                 name='message'
                 placeholder='Mensagem'
                 onChange={handleChange}
                 value={email.message}
-              ></textarea>
+                variants={itemAnimation}
+              ></motion.textarea>
             </Container>
-            <Button content='Enviar mensagem' />
+            <Button variants={itemAnimation} content='Enviar mensagem'/>
           </form>
         </Container>
-      </Container>
+      </motion.div>
     </motion.section>
   );
 };
 
 const Header = () => {
   return (
-    <Container>
+    <motion.div variants={itemAnimation}>
       <h3>Let's talk?</h3>
       <p>
         Não curte formulários? Envie-me um <a href='mailto:eduardocardoso1039@gmail.com'>email</a>.
       </p>
-    </Container>
+    </motion.div>
   );
 };
 
@@ -130,7 +126,7 @@ const Message = ({ message }) => {
 };
 
 const Input = ({ placeholder, ...others }) => (
-  <input type='text' placeholder={placeholder} {...others} />
+  <motion.input type='text' placeholder={placeholder} {...others} variants={itemAnimation} />
 );
 
 export default Contact;

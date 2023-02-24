@@ -55,10 +55,6 @@ button {
   border: none;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 }
 nav {
   align-items: center;
@@ -68,7 +64,7 @@ h1 {
   font-weight: bold;
 }
 section {
-  margin: 20vh 0;
+  margin: 30vh 0;
 }
 section {
   > h1 {

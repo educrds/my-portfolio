@@ -4,7 +4,7 @@ import { GiSnakeTongue } from 'react-icons/gi';
 import { SmallTitle, Title } from './TitleVariants';
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { getTransformStyle } from '../utils';
+import { containerAnimation, getTransformStyle, itemAnimation } from '../utils';
 import Container from './Container';
 
 const projects = [
@@ -77,12 +77,12 @@ const projects = [
 
 const Item = () =>
   projects.map(({ icon, title, techList, description, links }, i) => (
-    <Container key={i}>
+    <motion.div key={i} variants={itemAnimation}>
       <ProjectTitle icon={icon} title={title} />
       <Technologies techList={techList} />
       <ProjectDescription description={description} />
       <ProjectLinks links={links} />
-    </Container>
+    </motion.div>
   ));
 
 const ProjectTitle = ({ title, icon }) => (
@@ -126,9 +126,14 @@ export default function Projects() {
   return (
     <motion.section id='projects-section' ref={ref} style={getTransformStyle(isInView, '-200px')}>
       <Title text='Projetos' />
-      <Container className='projects'>
+      <motion.div
+        className='projects'
+        variants={containerAnimation}
+        initial='hidden'
+        animate={isInView ? 'visible' : 'hidden'}
+      >
         <Item />
-      </Container>
+      </motion.div>
     </motion.section>
   );
 }

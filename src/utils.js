@@ -6,6 +6,32 @@ const getTransformStyle = (isInView, px) => {
   };
 };
 
+const containerAnimation = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.8,
+      staggerChildren: 0.4,
+    },
+  },
+};
+
+const itemAnimation = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
+const buttonTransition = {
+  delay: 0.5,
+  x: { duration: 1 },
+  default: { ease: "linear" }
+};
+
 const mainCardVariants = {
   initial: { opacity: 0, scale: 0.5 },
   animate: { opacity: 1, scale: 1 },
@@ -23,4 +49,4 @@ const mainCardVariants = {
   },
 };
 
-export { getTransformStyle, mainCardVariants };
+export { getTransformStyle, mainCardVariants, containerAnimation, itemAnimation, buttonTransition };

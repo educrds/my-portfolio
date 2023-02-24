@@ -3,7 +3,7 @@ import Square from './Square';
 import { Title } from './TitleVariants';
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { getTransformStyle } from '../utils';
+import { containerAnimation, getTransformStyle, itemAnimation } from '../utils';
 
 const servicesList = [
   {
@@ -27,9 +27,14 @@ const Services = () => {
   return (
     <motion.section ref={ref} style={getTransformStyle(isInView, '200px')}>
       <Title text='Serviços' />
-      <Container className='services'>
-        {servicesList.map(service => <Square key={service.title} {...service} />)}
-      </Container>
+      <motion.div
+        className='services'
+        variants={containerAnimation}
+        initial='hidden'
+        animate={isInView ? 'visible' : 'hidden'}
+      >
+        {servicesList.map(service => <Square key={service.title} {...service} variants={itemAnimation} />)}
+      </motion.div>
     </motion.section>
   );
 };

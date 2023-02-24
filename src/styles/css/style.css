@@ -61,9 +61,6 @@ button {
 .theme-dark button {
   background-color: #ffd15c;
 }
-button:hover {
-  transform: scale(1.1);
-}
 
 nav {
   align-items: center;
@@ -74,7 +71,7 @@ h1 {
 }
 
 section {
-  margin: 20vh 0;
+  margin: 30vh 0;
 }
 
 section > h1 {
