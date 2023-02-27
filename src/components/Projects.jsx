@@ -9,25 +9,14 @@ import Container from './Container';
 
 const projects = [
   {
-    title: 'Chat App',
-    description: 'Aplicativo de chat em tempo real utilizando Node e a biblioteca Socket.io.',
-    icon: <FaRocketchat />,
-    techList: ['Node', 'SocketIO'],
-    links: {
-      github:
-        'https://github.com/educrds/The-Complete-Node.js-Developer-Course/tree/master/chat-app',
-      project: 'http://node-chat-app.herokuapp.com/',
-    },
-  },
-  {
-    title: 'Weather App',
+    title: 'Hangman Game',
     description:
-      'Aplicativo para visualizar indicadores do clima das cidades brasileiras, utilizando WeatherAPI.',
-    icon: <FaSun />,
-    techList: ['React', 'Styled-Components'],
+      'Jogo da Forca recriado com JS, HTML, CSS e Bootstrap. Dê adeus ao chato e experimente essa nova versão.',
+    icon: <FaGamepad />,
+    techList: ['Bootstrap', 'JavaScript'],
     links: {
-      github: 'https://github.com/educrds/react-weather-app',
-      project: 'https://educrds.github.io/react-weather-app/',
+      github: 'https://github.com/educrds/HangMan-Game',
+      project: 'https://educrds.github.io/HangMan-Game/',
     },
   },
   {
@@ -62,15 +51,27 @@ const projects = [
       project: 'https://educrds.github.io/BeAcademy-Final-Project/',
     },
   },
+
   {
-    title: 'Hangman Game',
-    description:
-      'Jogo da Forca recriado com JS, HTML, CSS e Bootstrap. Dê adeus ao chato e experimente essa nova versão.',
-    icon: <FaGamepad />,
-    techList: ['Bootstrap', 'JavaScript'],
+    title: 'Chat App',
+    description: 'Aplicativo de chat em tempo real utilizando Node e a biblioteca Socket.io.',
+    icon: <FaRocketchat />,
+    techList: ['Node', 'SocketIO'],
     links: {
-      github: 'https://github.com/educrds/HangMan-Game',
-      project: 'https://educrds.github.io/HangMan-Game/',
+      github:
+        'https://github.com/educrds/The-Complete-Node.js-Developer-Course/tree/master/chat-app',
+      project: 'http://node-chat-app.herokuapp.com/',
+    },
+  },
+  {
+    title: 'Weather App',
+    description:
+      'Aplicativo para visualizar indicadores do clima das cidades brasileiras, utilizando WeatherAPI.',
+    icon: <FaSun />,
+    techList: ['React', 'Styled-Components'],
+    links: {
+      github: 'https://github.com/educrds/react-weather-app',
+      project: 'https://educrds.github.io/react-weather-app/',
     },
   },
 ];
