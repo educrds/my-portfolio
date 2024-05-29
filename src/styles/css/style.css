@@ -540,16 +540,11 @@ footer svg:hover {
 
 @media (max-width: 630px) {
   .projects > div {
-    flex: 1 0 100%;
+    grid-column: span 2;
     padding: 4vh 4vw;
   }
   .projects .technologies .item {
     padding: 0 3vw;
-  }
-}
-@media (min-width: 635px) and (max-width: 1167px) {
-  .projects > div {
-    flex: 1 0 40%;
   }
 }
 .services {
@@ -740,6 +735,7 @@ footer svg:hover {
 }
 .contact > div a {
   color: #ffd15c;
+  text-decoration: none;
 }
 .contact .form {
   flex: 2;
