@@ -25,7 +25,7 @@ html {
 }
 @media (min-width: 1440px) {
   .wrapper {
-    padding: 2vh 20vw;
+    padding: 2vh 15vw;
   }
 }
 
@@ -369,11 +369,23 @@ footer svg:hover {
 .tech-list .Bootstrap svg {
   color: #5b397b;
 }
+.tech-list .Angular svg {
+  color: #DE002D;
+}
+.tech-list .Typescript svg {
+  color: #007ACC;
+  padding: 8px;
+}
+.tech-list .NodeJs svg {
+  color: #8BC500;
+  padding: 8px;
+}
 .tech-list .Github svg {
   color: #0d2534;
 }
-.tech-list .MySQL svg {
+.tech-list .SQL svg {
   color: #00718b;
+  padding: 9px;
 }
 .tech-list .React svg {
   color: #5ed3f3;
@@ -392,7 +404,9 @@ footer svg:hover {
 .projects {
   flex-wrap: wrap;
   color: #333;
-  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  display: grid;
   gap: 2rem;
 }
 .projects > div {
@@ -400,7 +414,9 @@ footer svg:hover {
   border-radius: 2rem;
   padding: 5vh 2.5vw;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
-  flex: 1 0 30%;
+}
+.projects div:first-child {
+  grid-column:  span 2;
 }
 .projects > div .technologies {
   gap: 0.3rem;
@@ -459,6 +475,11 @@ footer svg:hover {
 }
 .projects > div .technologies .item.PostgreSQL {
   background-color: #2f74c0;
+  border: none;
+  color: #fdfdfd;
+}
+.projects > div .technologies .item.Angular {
+  background-color: #DE002D;
   border: none;
   color: #fdfdfd;
 }
@@ -569,6 +590,7 @@ footer svg:hover {
   padding: 5vh 2.5vw;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
   display: flex;
+  justify-content: center;
   text-align: left;
   flex-direction: column;
 }

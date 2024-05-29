@@ -1,11 +1,11 @@
 {
-  "name": "day-10-level-02",
+  "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://github.com/educrds/my-portfolio/",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

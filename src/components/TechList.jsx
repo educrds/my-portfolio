@@ -1,18 +1,20 @@
-import { DiJavascript, DiMysql, DiGithubBadge, DiReact, DiSass, DiHtml5, DiBootstrap, DiCss3 } from 'react-icons/di';
+import { DiJavascript, DiReact, DiSass, DiBootstrap, DiAngularSimple   } from 'react-icons/di';
+import { FaDatabase } from "react-icons/fa";
+import { SiTypescript, SiNodedotjs  } from "react-icons/si";
 import { getTransformStyle, itemAnimation, containerAnimation } from '../utils';
 import { SmallTitle, Title } from './TitleVariants';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 const techList = [
-  { techName: 'HTML', techIcon: <DiHtml5 /> },
+  { techName: 'Typescript', techIcon: <SiTypescript /> },
+  { techName: 'Angular', techIcon: <DiAngularSimple /> },
   { techName: 'Javascript', techIcon: <DiJavascript /> },
-  { techName: 'CSS', techIcon: <DiCss3 /> },
+  { techName: 'React', techIcon: <DiReact /> },
+  { techName: 'NodeJs', techIcon: <SiNodedotjs  /> },
   { techName: 'Sass', techIcon: <DiSass /> },
   { techName: 'Bootstrap', techIcon: <DiBootstrap /> },
-  { techName: 'Github', techIcon: <DiGithubBadge /> },
-  { techName: 'MySQL', techIcon: <DiMysql /> },
-  { techName: 'React', techIcon: <DiReact /> },
+  { techName: 'SQL', techIcon: <FaDatabase /> },
 ];
 
 const TechSkills = () => {

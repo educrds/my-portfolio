@@ -1,9 +1,9 @@
 .tech-list {
-  display: flex;
-  flex-wrap: wrap;
   @include themify($themes) {
     background-color: themed('whiteColor');
   }
+  display: flex;
+  flex-wrap: wrap;
   color: #333;
   box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 8px;
   border-radius: 1.3rem;
@@ -24,46 +24,6 @@
       font-size: 1.1rem;
       font-weight: bold;
       color: var(--dark-gray);
-    }
-  }
-  .Javascript {
-    svg {
-      color: #f7d800;
-    }
-  }
-  .CSS {
-    svg {
-      color: #006cb4;
-    }
-  }
-  .Sass {
-    svg {
-      color: #c66394;
-    }
-  }
-  .HTML {
-    svg {
-      color: #f75421;
-    }
-  }
-  .Bootstrap {
-    svg {
-      color: #5b397b;
-    }
-  }
-  .Github {
-    svg {
-      color: #0d2534;
-    }
-  }
-  .MySQL {
-    svg {
-      color: #00718b;
-    }
-  }
-  .React {
-    svg {
-      color: #5ed3f3;
     }
   }
 }

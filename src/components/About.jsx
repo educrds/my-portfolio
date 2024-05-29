@@ -6,16 +6,20 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import ProgressBar from './ProgressBar';
 import { getTransformStyle } from '../utils';
-import curriculum from '../assets/imgs/CV-Eduardo Cardoso.pdf';
+import curriculum from '../assets/imgs/CV - Eduardo Cardoso.pdf';
 
 const skillsPercentage = [
   {
     content: 'Front-End',
-    percentage: 65,
+    percentage: 80,
   },
   {
     content: 'UX/UI Design',
     percentage: 45,
+  },
+  {
+    content: 'Back-End',
+    percentage: 25,
   },
 ];
 
@@ -28,9 +32,6 @@ const About = () => {
       <motion.section id='about-section' ref={ref} style={getTransformStyle(isInView, '-200px')}>
         <Title text='Sobre mim' />
         <Container className='about'>
-          <Container>
-            <Photo className='photo' />
-          </Container>
           <Container className='summary'>
             <Summary />
             <Skills />
@@ -43,7 +44,12 @@ const About = () => {
 
 const Summary = () => (
   <Container>
-    <SmallTitle content='Desenvolvedor front-end React com experiência em criar interfaces de usuário responsivas e acessíveis e atualizado com as últimas tendências de design e desenvolvimento front-end.' />
+    <SmallTitle
+      content='Desenvolvedor front-end criativo e motivado, especializado em Angular, com experiência na criação de
+interfaces de usuário dinâmicas e responsivas. Comprometido com a excelência e a melhoria contínua, com
+habilidades comprovadas em trabalhar tanto individualmente quanto em equipe.
+'
+    />
     <Button content='Baixar CV' href={curriculum} target='_blank' />
   </Container>
 );

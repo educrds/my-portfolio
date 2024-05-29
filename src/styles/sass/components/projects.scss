@@ -4,9 +4,9 @@
 .projects {
   flex-wrap: wrap;
   color: #333;
-  display: flex;
+  display: grid;
   gap: 2rem;
-
+  
   > div {
     @include tag;
     @include square;
